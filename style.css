@@ -1,0 +1,49 @@
+html {
+  font-size: 62.25%;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background: url(img/Secret-Poster-Banner.jpg) no-repeat top;
+  height: 90vh;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#container {
+  max-width: 92% !important;
+  margin: auto;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 4rem;
+  margin-right: 5rem;
+}
+
+.navbar-nav {
+  color: #fff;
+  font-size: 1.8rem;
+}
+/*# sourceMappingURL=style.css.map */
