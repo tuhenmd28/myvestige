@@ -1,0 +1,750 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.btn.btn-primary {
+  color: #ffa500;
+  background-color: transparent;
+  border-color: #ffa500;
+  font-size: 1.9rem;
+  padding: .4rem 1.5rem;
+  font-weight: 700;
+  position: relative;
+  z-index: 10;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-radius: 5px;
+}
+
+.btn.btn-primary:hover {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn.btn-primary:hover::after {
+  height: 100%;
+}
+
+.btn.btn-primary::after {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #ffa500;
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 5px;
+}
+
+.container {
+  max-width: 95%;
+  margin: auto;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+ol, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 90%;
+  position: relative;
+}
+
+.swiper-slide {
+  background: url(img/VestigeDSN2021_Banner_4000x1146.jpg);
+  background-position: top center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical > .swiper-pagination-bullets {
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translate3d(0px, -50%, 0);
+          transform: translate3d(0px, -50%, 0);
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 4px;
+  display: block;
+}
+
+.swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #f36303;
+  opacity: .2;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.right-area button {
+  margin-left: -5px;
+  font-size: 1.5rem;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.none {
+  display: none;
+}
+
+.search {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.search-area.block {
+  display: block;
+}
+
+.search-area .search-none {
+  position: absolute;
+  top: -3%;
+  right: 1%;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.search-area {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 3rem;
+  border-radius: 5px;
+}
+
+.search-area .search-none {
+  position: absolute;
+  top: -3%;
+  right: 1%;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.search-area .search-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dropdown-menu {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1rem 2rem 1rem rgba(0, 0, 0, 0.366);
+          box-shadow: 0 1rem 2rem 1rem rgba(0, 0, 0, 0.366);
+}
+
+.language.block {
+  display: block;
+}
+
+.language {
+  background: #fff;
+  border-radius: 10px;
+  width: 75%;
+  margin: auto;
+  display: none;
+}
+
+.language h1 {
+  text-align: center;
+  font-size: 3rem;
+  background: #cac4c5;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.language .language-wraper {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.language .language-wraper span {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.bottom-btn {
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
+  width: 94%;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.bottom-btn .btn.btn-primary {
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+}
+
+.bottom-btn .btn.btn-primary:nth-child(8) {
+  margin-right: 0;
+  background: green;
+}
+
+.social-icon {
+  position: fixed;
+  bottom: 5%;
+  right: 0;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2rem 2rem 2rem rgba(0, 0, 0, 0.246);
+          box-shadow: 0 2rem 2rem 2rem rgba(0, 0, 0, 0.246);
+  z-index: 100;
+}
+
+.social-icon a {
+  font-size: 3rem;
+  width: 5rem;
+  height: 5rem;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+}
+
+.social-icon a:nth-child(1) {
+  background: #4267B2;
+  color: #fff;
+}
+
+.social-icon a:nth-child(2) {
+  background: linear-gradient(45deg, #F58529, #FEDA77, #DD2A7B, #8134AF, #515BD4);
+  color: #fff;
+}
+
+.social-icon a:nth-child(3) {
+  background: #1DA1F2;
+  color: #fff;
+}
+
+.social-icon a:nth-child(4) {
+  background: #FF0000;
+  color: #fff;
+}
+
+.login-area.block {
+  display: block;
+}
+
+.login-area {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-box-shadow: 0 2rem 2rem 2rem rgba(0, 0, 0, 0.246);
+          box-shadow: 0 2rem 2rem 2rem rgba(0, 0, 0, 0.246);
+  z-index: 110;
+  font-family: "Bebas Neue", cursive;
+  width: 25%;
+  display: none;
+}
+
+.login-area h1 {
+  font-size: 3rem;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  background: #DD2A7B;
+  padding: 2rem 0;
+  color: #fff;
+  border-radius: 10px 0 0 0;
+}
+
+.login-area .login-input-area {
+  margin-top: -1rem;
+  padding: 2rem 0 2rem 3rem;
+  background-color: rgba(0, 0, 0, 0.952);
+  border-radius: 0 0 0 10px;
+}
+
+.login-area .login-input-area label {
+  display: block;
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 1.9rem 0 0rem 0;
+}
+
+.login-area .login-input-area a {
+  color: #fff;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.login-area .login-input-area a:hover {
+  text-decoration: underline;
+}
+
+.login-area .login-input-area #submit {
+  margin: 3rem 0;
+  width: unset;
+  padding: 1rem 3rem;
+  text-align: center;
+  background: transparent;
+  color: #ffa500;
+  border: 1px solid #ffa500;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.login-area .login-input-area #submit:hover {
+  color: #fff;
+  border: 1px solid #fff;
+  letter-spacing: 2px;
+  font-size: 2.3rem;
+}
+
+.login-area .login-input-area input {
+  display: block;
+  font-size: 2rem;
+  padding: 1rem 0 1rem 1rem;
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  outline: unset;
+}
+
+.login-area .login-input-area input::-webkit-input-placeholder {
+  color: #ffa500;
+  opacity: .6;
+}
+
+.login-area .login-input-area input:-ms-input-placeholder {
+  color: #ffa500;
+  opacity: .6;
+}
+
+.login-area .login-input-area input::-ms-input-placeholder {
+  color: #ffa500;
+  opacity: .6;
+}
+
+.login-area .login-input-area input::placeholder {
+  color: #ffa500;
+  opacity: .6;
+}
+
+.login-area .login-input-area input:focus {
+  -webkit-box-shadow: 0 0 1rem 0.2rem rgba(49, 49, 246, 0.589);
+          box-shadow: 0 0 1rem 0.2rem rgba(49, 49, 246, 0.589);
+  border: 2px solid #4267B2;
+}
+
+.img-section img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: 1s;
+  transition: 1s;
+  margin-top: 1rem;
+  border-radius: .3rem;
+}
+
+.img-section img:hover {
+  -webkit-filter: initial;
+          filter: initial;
+}
+
+.img-section .img-text {
+  bottom: 5%;
+  left: 3%;
+  width: 100%;
+}
+
+.img-section .img-text span {
+  font-size: 3rem;
+  color: #fff;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.img-section .img-text span:last-child {
+  font-size: 1.6rem;
+}
+
+.img-section .img-text .right-icon {
+  font-size: 4rem;
+  color: #fff;
+  position: absolute;
+  right: 7%;
+}
+
+.container1 {
+  width: 75%;
+  margin: auto;
+}
+
+.container1 h1 {
+  font-size: 4rem;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.container1 .brand-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container1 .brand-wraper .brand-name {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 150px;
+  height: 130px;
+  margin: 1rem;
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.171);
+  line-height: 130px;
+  -webkit-box-shadow: 0 1rem 2rem 0.2rem rgba(0, 0, 0, 0.27);
+          box-shadow: 0 1rem 2rem 0.2rem rgba(0, 0, 0, 0.27);
+}
+
+.container1 .brand-wraper .brand-name:hover {
+  -webkit-filter: initial;
+          filter: initial;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 1rem 2rem 0.2rem rgba(0, 0, 0, 0.367);
+          box-shadow: 0 1rem 2rem 0.2rem rgba(0, 0, 0, 0.367);
+}
+
+.container1 .brand-wraper .brand-name img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.container1 .brand-wraper .brand-name img:hover {
+  -webkit-filter: initial;
+          filter: initial;
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+}
+
+.container1 .brand-wraper .resize:hover img {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-filter: initial;
+          filter: initial;
+}
+
+.container1 .brand-wraper .resize img {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.about-section {
+  background: url(img/aboutbg.jpg) no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+
+.about-section h2 {
+  text-align: center;
+  padding: 3rem;
+  text-transform: uppercase;
+  font-weight: "Alfa Slab One", cursive;
+  font-size: 3rem;
+}
+
+.about-section p {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-bottom: 3rem;
+  line-height: 2.6rem;
+}
+
+.about-section h3 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.video-section {
+  margin: 5rem 0 !important;
+}
+
+.video-section .btn.btn-primary.mb-5 {
+  color: #2bc110;
+  border-color: #2bc110;
+  z-index: 1;
+}
+
+.video-section .btn.btn-primary.mb-5:hover {
+  color: #fff;
+}
+
+.video-section .btn.btn-primary.mb-5:hover::after {
+  background: #2bc110 !important;
+  z-index: -1;
+}
+
+.video-section .video-title {
+  font-size: 3rem;
+  color: black;
+  text-transform: uppercase;
+  padding-top: 3rem;
+}
+
+.video-section .video-container {
+  margin: 2rem 0;
+  padding-top: 56.25%;
+  height: 0px;
+  position: relative;
+}
+
+.video-section .video-container .youtube-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.reach-out {
+  font-family: "Oswald", sans-serif;
+  background: #011627 !important;
+}
+
+.reach-out .rtitle {
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 3rem 0;
+  font-family: "Oswald", sans-serif;
+}
+
+.reach-out .map-area h3 {
+  font-size: 2.3rem;
+  font-family: "Oswald", sans-serif;
+  color: #4267B2;
+  padding: 1rem 0;
+}
+
+.reach-out .map-area p {
+  font-size: 1.6rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.reach-out .map-area .map {
+  max-width: 100%;
+  width: 100%;
+  max-height: 250px;
+  height: 250%;
+  border-radius: 4px;
+  margin: 2rem 0;
+}
+
+.reach-out .map-area .map iframe {
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.form-area h3 {
+  font-size: 2.5rem;
+  color: #4267B2;
+  margin-bottom: 1rem;
+}
+
+.form-area p {
+  font-size: 1.6rem;
+  margin: .5rem 0 3rem 0;
+  line-height: 2.5rem;
+}
+
+.form-area form input, .form-area form textarea {
+  font-size: 1.7rem;
+  padding: 1rem 0 1rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+}
+
+.form-area form .btn.btn-primary.color {
+  color: #4267B2;
+  border-color: #4267B2;
+  font-size: 2rem;
+  padding: .7rem 2.4rem;
+}
+
+.form-area form .btn.btn-primary.color:hover {
+  color: #fff;
+  border: 1px solid #4267B2;
+}
+
+.form-area form .btn.btn-primary.color:hover::after {
+  background: #4267B2 !important;
+}
+
+.address h3 {
+  font-size: 2.5rem;
+  color: #4267B2;
+  margin-bottom: 2rem;
+}
+
+.address p {
+  font-size: 1.6rem;
+}
+
+footer {
+  font-family: "Oswald", sans-serif;
+}
+
+footer p {
+  font-size: 1.4rem;
+}
+
+footer img {
+  margin: 2rem 0;
+}
+
+footer ul li {
+  margin: 1rem 0 !important;
+}
+
+footer ul li a {
+  font-size: 1.5rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.705);
+  padding: 0 1rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+footer ul li a:hover {
+  color: #ffa500;
+}
+
+footer ul li:last-child a {
+  border: none;
+}
+
+@media all and (mix-width: 1199px) {
+  .nav-menu {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media all and (min-width: 1199px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item:hover .nav-link {
+    color: white;
+  }
+  .navbar .nav-item {
+    margin: 0;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+  .navbar .nav-item {
+    padding: 1rem 0.1rem;
+    -webkit-transition: all 2s !important;
+    transition: all 2s !important;
+  }
+  .navbar .nav-item .nav-link {
+    color: #ffa500;
+    font-size: 2.5rem;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    opacity: .8;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    margin: 0 .3rem;
+    letter-spacing: -1px;
+  }
+  .navbar .nav-item .nav-link:hover, .navbar .nav-item .nav-link.active {
+    opacity: 1;
+  }
+  .dropdown {
+    -webkit-transition: all 2s;
+    transition: all 2s;
+  }
+  .dropdown-menu {
+    padding: .6rem 0;
+  }
+  .dropdown-menu .dropdown-item {
+    font-size: 2.5rem;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    -webkit-transition: all .7s;
+    transition: all .7s;
+    text-align: center;
+    padding: .5rem 2rem;
+    margin: 0;
+  }
+  .dropdown-menu .dropdown-item:hover {
+    background-color: black;
+    color: white;
+    border-radius: 10px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
