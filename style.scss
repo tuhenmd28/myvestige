@@ -10,6 +10,30 @@ $therdF:'Montserrat', sans-serif;
 $primaryF:'Oswald', sans-serif;
 $primaryC:#ffa500;
 
+//navbar  scroll css
+.menu.navbar-sticky-moved-up{
+    margin-top: -5rem;
+}
+.menu.navbar-sticky-moved-up.navbar-sticky-transitioned{
+    transition: all 0.8s ease-in-out;
+}
+.menu.navbar-sticky-moved-up.navbar-sticky-transitioned.navbar-sticky-on{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:#fff;
+    color: black;
+}
+::-webkit-scrollbar{
+    width: 1rem;
+}
+::-webkit-scrollbar-thumb{
+    background: #7146d0;
+    border-radius: .5rem 0;
+}
+::-webkit-scrollbar-track{
+    background: gray;
+}
 .container{
     max-width: 95%;
     margin: auto;
