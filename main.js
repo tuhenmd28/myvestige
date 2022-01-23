@@ -33,6 +33,7 @@ var i;
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    console.log(this);
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
       panel.style.display = "none";
@@ -62,23 +63,23 @@ toggle.addEventListener('click',()=>{
         show = false ;
     }
    });
-// swiper slider
-var swiper = new Swiper(".mySwiper", {
-  direction: "vertical",
-  loop:true,
-  autoplaySpeed:3000,
-  // centeredSlides:true,
-  slidesPerView: "auto",
-  autoplay:{
-      delay:10000,
-      disableOnInteraction:false
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  paginationClickable:true,
-});
+// // swiper slider
+// var swiper = new Swiper(".mySwiper", {
+//   direction: "vertical",
+//   loop:true,
+//   autoplaySpeed:3000,
+//   // centeredSlides:true,
+//   slidesPerView: "auto",
+//   autoplay:{
+//       delay:10000,
+//       disableOnInteraction:false
+//   },
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   paginationClickable:true,
+// });
 
 
 
